@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<style name="AppThemeMY" parent="AppThemefa">
+    <!-- Customize your theme here. -->
+
+</style>
+
+<style name="AppThemefa" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+</style>
+<style name="Progress_Theme">
+    <item name="colorAccent">@color/Backgrand_Edittext</item>
+
+</style>
+
+<style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <!--رنگ باتن ها-->
+    <item name="colorAccent">@color/colorAccent</item>
+    <!--رنگ تایتل و متن-->
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <!--بک گروند دیالوگ-->
+    <item name="android:windowBackground">@color/BackColor</item>
+</style>
+
+<style name="AppThemeMY.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+<style name="AppThemeMY.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

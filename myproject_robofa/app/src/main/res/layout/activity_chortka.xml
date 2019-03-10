@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MainPage_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary2"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--#f8960a-->
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/girl" />
+
+                    <TextView
+                        android:id="@+id/MainPage_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="چرتکه محاسبات ذهنی"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term1"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:layout_marginRight="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:id="@+id/Teterm1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text=" پری روبوفا"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term2"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="اینترو روبوفا"
+                            android:id="@+id/Teterm2"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term3"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:layout_marginRight="10dp"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:id="@+id/Teterm3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا بیسیک"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term4"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:id="@+id/Teterm4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا جهش"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term5"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginRight="10dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/imageterm5"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم کمپ"
+                            android:id="@+id/Teterm5"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term6"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/imageterm6"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا کمپ "
+                            android:id="@+id/Teterm6"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term7"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="10dp"
+
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text=" روبوفا پلاس"
+                            android:id="@+id/Teterm7"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term8"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا پلاس "
+                            android:id="@+id/Teterm8"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term9"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginRight="10dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm9"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا زیگما"
+                            android:id="@+id/Teterm9"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term10"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm10"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا چلنج"
+                            android:id="@+id/Teterm10"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term11"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginRight="10dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm11"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا نیترو"
+                            android:id="@+id/Teterm12"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Chortka_Term12"
+                    android:layout_width="130dp"
+                    android:layout_height="125dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageterm12"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="روبوفا فاینال"
+                            android:id="@+id/Teterm11"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+</ScrollView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/girl"></LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/MainPage_Home_Chortka_Term"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/buuton_chortka"
+                    android:text="ترم های 1 تا 6"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text=" پری روبوفا"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="اینترو روبوفا"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا بیسیک"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا جهش"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="ترم کمپ"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا کمپ 2"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/MainPage_Home_Chortka_Term06"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/buuton_chortka"
+                    android:text="ترم های 7 تا 12"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا پلاس"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا پلاس 2"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا زیگما"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:enabled="false"
+                    android:text="روبوفا چلنج"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:text="روبوفا نیترو"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_class"
+                    android:text="روبوفا فاینال"
+                    android:textColor="@color/TextColor"
+                    android:textSize="15dp"
+
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
+

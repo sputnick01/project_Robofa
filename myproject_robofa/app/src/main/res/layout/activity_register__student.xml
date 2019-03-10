@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register__student"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backabout"
+    tools:context="com.example.farshid.myproject_robofa.MainPage.Register.Register_Student">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/TRS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="برای ثبت نام در رشته مورد نظر لطفا به یکی از مراکز ما مراجعه بفرمایید."
+            android:textColor="#060606"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TRS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="یا برای کسب اطلاعات بیشتر با شماره زیر تماس حاصل کنید."
+            android:textColor="#060606"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TRS3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="09147089973"
+                android:textColor="#ff0019"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TRS4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="کیوان عباس زاده"
+                android:textColor="#060606"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="برای تماس شماره را لمس کنید."
+            android:textColor="#060606"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

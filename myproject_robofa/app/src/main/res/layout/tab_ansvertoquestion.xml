@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ex"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Search_Class"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="رشته"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Search_Student_Base"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="پایه"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Search_Student_Lessen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="درس"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Search_Term"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="ترم"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Search_TypeClass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="نوع کلاس"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/Search_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/TextColor"
+            android:textSize="12dp"
+            android:background="@drawable/backedittext"
+            android:text="جستوجوی دانش آموزان"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

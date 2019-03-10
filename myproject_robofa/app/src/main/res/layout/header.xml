@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:background="@drawable/image_student"
+    android:layoutDirection="ltr"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@android:style/Theme.Translucent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        >
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/NavigationBar_CirculerImage"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@drawable/image_student"
+            app:civ_border_color="#661a2c"
+            app:civ_border_width="1dp"
+            app:civ_shadow="true"
+            android:layout_gravity="left"
+            app:civ_shadow_color="#f8be3b"
+            app:civ_shadow_radius="10" />
+
+        <TextView
+            android:id="@+id/NavigationBar_TextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NavigationBar_CirculerImage"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="فرشید حبیبی"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

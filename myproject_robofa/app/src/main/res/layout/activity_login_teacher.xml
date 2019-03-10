@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MainPage_LogingTeacher_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary2"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--#f8960a-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:id="@+id/MainPage_Home_IconToolbar"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:src="@drawable/icon_home"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--/>-->
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/ToolbarLoginTeacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="ورود استاد"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="13dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layoutDirection="ltr"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/KindUser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backedittext"
+                android:text="نوع کاربر"
+                android:textColor="@color/TextColor"
+                android:textColorHint="@color/Yellow"
+                android:textSize="14sp" />
+            <!--لایه شماره تلفن -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MainPage_Home_Rel1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                >
+                <EditText
+                    android:id="@+id/MainPage_LogingTeacher_Rigster_PhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/MainPage_Home_IconUser_PhoneNumber"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/TextColor2"
+                    android:layout_toRightOf="@+id/MainPage_Home_IconUser_PhoneNumber"
+                    android:background="@drawable/backedittext"
+                    android:hint="نام کاربری"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/MainPage_Home_IconUser_PhoneNumber"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/iconsetting"
+                    android:src="@drawable/newperson"
+                    android:textColor="@color/TextColor"
+                    android:tint="@color/TextColor"
+                    />
+
+            </RelativeLayout>
+            <!--لایه رمز عبور-->
+            <RelativeLayout
+                android:id="@+id/MainPage_Home_Rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MainPage_Home_Rel1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/MainPage_Rigster_LogingTeacher_EditText_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/MainPage_Home_IconUser_Password"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/MainPage_Home_IconUser_Password"
+                    android:background="@drawable/backedittext"
+                    android:hint="رمز عبور "
+                    android:inputType="number"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:textColor="@color/TextColor2"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/MainPage_Home_IconUser_Password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/iconsetting"
+                    android:padding="5dp"
+                    android:src="@drawable/new_lock"
+                    android:tint="@color/TextColor" />
+
+            </RelativeLayout>
+            <!--لایه چک باکس-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                >
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/Login_CheckBoxRemember"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:buttonTint="#151314"
+                    android:text="به خاطر بسپار"
+                    android:checked="false"
+                    android:textColor="@color/Yellow"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+            <!--دکمه ورود-->
+            <Button
+                android:id="@+id/MainPage_LogingTeacher_ButtonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backbutton"
+                android:text="ورود"
+                android:textColor="@color/TextColor"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

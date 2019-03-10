@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/ButtomNav_MenuCamera"
+        android:enabled="true"
+        android:icon="@drawable/icon_camera"
+        android:title="دوربین" />
+    <item
+        android:id="@+id/Nav_MenuCenterlze"
+        android:icon="@drawable/icon_centeral"
+        android:title="مراکز ما" />
+
+    <item
+        android:id="@+id/ButtomNav_MenuHome"
+        android:enabled="true"
+        android:icon="@drawable/new_home"
+        android:title="خانه" />
+    <item
+        android:id="@+id/ButtomNav_MenuChannle"
+        android:enabled="true"
+        android:icon="@drawable/icon_channl"
+        android:title="کانال ها" />
+    <item
+        android:id="@+id/ButtomNav_MenuGroup"
+        android:enabled="true"
+        android:icon="@drawable/icon_group"
+        android:title="مدرسه" />
+
+</menu>

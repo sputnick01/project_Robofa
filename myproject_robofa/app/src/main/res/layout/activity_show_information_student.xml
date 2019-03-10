@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_your_rating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.farshid.myproject_robofa.MainPage.Home.EnterActivity.Chortka.YourRating.YourRating">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/Coord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainPage.Home.EnterActivity.Chortka.YourRating.YourRating">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="25dp">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary2"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--#f8960a-->
+                    <TextView
+                        android:id="@+id/TextTitle_Show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="صفحه دانش آموز"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--پروفایل-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/BackRecycler"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/RecyclerView_ShowInformation_CircularImageView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/girl"
+                            app:civ_border_color="#172938"
+                            app:civ_border_width="2dp"
+                            app:civ_shadow="true"
+
+                            app:civ_shadow_color="#192d3c"
+                            app:civ_shadow_radius="10" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+                            <!--نام-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_TextName1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="نام : "
+                                    android:textColor="@color/black"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation__TetName2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_TextName1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--نام خانوادگی-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_TetLastName1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="نام خانوادگی : "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_TetLastName2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_TetLastName1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--پایه-->
+                            <RelativeLayout
+                                android:id="@+id/RelBase"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_SchoolBase1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="پایه : "
+                                    android:textColor="@color/black"
+
+
+                                    />
+
+                                <TextView
+
+                                    android:id="@+id/RecyclerView_ShowInformation_SchoolBase2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_SchoolBase1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--مدرسه-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/RelSchool"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_School1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="مدرسه : "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+
+                                    android:id="@+id/RecyclerView_ShowInformation_School2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_School1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--ترم-->
+                            <RelativeLayout
+                                android:id="@+id/RelTerm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_Base1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="ترم: "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+
+                                    android:id="@+id/RecyclerView_ShowInformation_Base2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_Base1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--تولد-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/RelBirth"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_Birth1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="تولد: "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+
+                                    android:id="@+id/RecyclerView_ShowInformation_Birth2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_Birth1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--رشته-->
+                            <RelativeLayout
+                                android:id="@+id/RelField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_Feild1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="رشته: "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_Feild2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_Feild1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--کلاس-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_Class1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="کلاس: "
+                                    android:textColor="@color/black"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_Class2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_Class1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--رتبه ترم-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/YourRating_TermRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="رتبه ترم: "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/YourRating_TermRating2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/YourRating_TermRating"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--رتبه کل-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_TotalTermRating1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="رتبه کل ترم: "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_TotalTermRating2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_TotalTermRating1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--کد ملی-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_NationalCode1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="کد ملی : "
+                                    android:textColor="@color/black"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_NationalCode2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_NationalCode1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                            <!--شماره تلفن-->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_PhoneNumber1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="شماره تماس :"
+                                    android:textColor="@color/black"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/RecyclerView_ShowInformation_PhoneNumber2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/RecyclerView_ShowInformation_PhoneNumber1"
+                                    android:text="---" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <!--دکمه تغیر عکس-->
+                <Button
+                    android:id="@+id/SubmitImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:textColor="@color/TextColor"
+                    android:background="@drawable/backbutton_chanageimage"
+                    android:text="تغیر عکس "
+                    />
+                <!--برای مشاهده نمرات دانش آموزان-->
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/BackRecycler"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/LinnearLesson"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.weiwangcn.betterspinner.library.BetterSpinner
+                                android:id="@+id/ScoreLesson"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/backbutton_chanageimage"
+                                android:text="درس"
+                                android:textColor="@color/White"
+                                android:textColorHint="@color/Yellow"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/Search_SecoreLesson"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/White"
+                                android:background="@drawable/backbutton_chanageimage"
+                                android:text="مشاهده نمره"
+                                />
+                            <Button
+                                android:id="@+id/Score1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/White"
+                                android:background="@drawable/backbutton_chanageimage"
+                                android:text="نمرات نوبت اول"
+                                />
+                            <Button
+                                android:id="@+id/Score2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/White"
+                                android:background="@drawable/backbutton_chanageimage"
+                                android:text="نمرات نوبت دوم"
+                                />
+
+
+                        </LinearLayout>
+
+                        <com.jjoe64.graphview.GraphView
+                            android:id="@+id/RecyclerView_ShowInformation_graph"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+              <!--برای درج نمره دانش آموزان-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/BackRecycler"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="5dp"
+                    android:id="@+id/CardInsertScore"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/colorPrimary2">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="درج نمره دانش آموز"
+                                android:textColor="#ffffff" />
+
+                        </RelativeLayout>
+
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:id="@+id/Week"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/backbutton_chanageimage"
+                            android:text="هفته"
+                            android:textColor="@color/White"
+                            android:textColorHint="@color/Yellow"
+                            android:textSize="14sp" />
+
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:id="@+id/insert_LessonScore"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/backbutton_chanageimage"
+                            android:text="درس"
+                            android:textColor="@color/White"
+                            android:textColorHint="@color/Yellow"
+                            android:textSize="14sp" />
+
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:id="@+id/Score"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/backbutton_chanageimage"
+                            android:text="نمره"
+                            android:textColor="@color/White"
+                            android:textColorHint="@color/Yellow"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/EditWeekRating"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone"
+                            android:background="@drawable/backbutton_chanageimage"
+                            android:hint="رتبه در این آزمون"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/EditTotalRating"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/back_setting"
+                            android:hint="رتبه کل"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/Scoreok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="50dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/White"
+                            android:layout_weight="1"
+                            android:background="@drawable/backbutton_chanageimage"
+                            android:text="ثبت نمره"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

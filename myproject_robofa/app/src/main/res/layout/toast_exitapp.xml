@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dra_toast_exitapp"
+    android:layoutDirection="ltr"
+    android:layout_margin="30dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/TextColor"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text= "برای خروج دوباره کلیک کنید."
+        android:textSize="16dp"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        />
+</LinearLayout>

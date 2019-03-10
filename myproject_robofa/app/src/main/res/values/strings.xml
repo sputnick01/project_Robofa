@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">یولآموز</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="phone">0914 708 9973</string>
+    <string name="TimeSleep">1000</string>
+
+    <string name="example_title">تمرین شما به پایان رسید و شما به سوالات جواب دادید</string>
+    <string name="example_subtitle">آیا میخواهید به صفحه کارنامه خود بروید یا قصد تمرین مجدد را دارید ؟ </string>
+    <string name="ok">برو بریم</string>
+    <string name="dismiss">نمیرم</string>
+
+
+    <string name="example_title2">برای ادامه باید نسخه بروز برنامه را دانلود کنید.</string>
+    <string name="example_subtitle2">آیا میخواهید به صفحه بروزرسانی بروید ؟ </string>
+    <string name="ok2">برو بریم</string>
+    <string name="dismiss2">انصراف</string>
+
+    <string name="download_Pdf">Download pdf</string>
+    <string name="download_Doc">Download Doc</string>
+    <string name="download_zip">دانلود فایل زیپ برنامه</string>
+    <string name="download_video">Download Video</string>
+    <string name="download_mp3">Download MP3</string>
+    <string name="openFolder">باز کردن پوشه دانلود</string>
+    <string name="downloadStarted">شروع دانلود..</string>
+    <string name="downloadCompleted">دانلود انجام شد ..</string>
+    <string name="downloadFailed">دانلود ناموفق ...</string>
+    <string name="downloadAgain">دانلود مجدد...</string>
+    <string name="EXIT">بستن برنامه</string>
+    <string name="TextStarted">لطفا در طول دانلود برنامه صبور باشید.</string>
+
+
+    <string name="TextComplete">فایل زیپ برنامه در پوشه یولآموز در کارت حافظه قرار دارد بعد از حذف برنامه فعلی برنامه ایی که دانلود کرده اید را از حالت فشرده خارج کرده و نصب کنید با تشکر </string>
+   <!--for about me-->
+    <string name="TextNameGod">به نام خدا </string>
+    <string name="TextMain">برنامه یولآموز در واقع برنامه ای در جهت هوشمند سازی مدارس مشگین شهر میباشد این برنامه ارتباط بین  دانش آموز و معلم را نزدیک تر و حتی ارتباط آن ها را در خارج از مدرسه برقرار میکند و روند نمره دهی و تدریس و یادگیری را بهبود میبخشد به امید روزی که با استفاده از یولآموز گام بزرگی در هوشمند سازی مدارس وموسسه ها برداشته باشیم .</string>
+    <string name="TextName">فرشید حبیبی </string>
+    <string name="TextEmail">habibi.farshid75@gmail.com</string>
+    <string name="TextPhone">09357132959</string>
+    <string name="Recourse1">09357132959</string>
+    <string name="Recourse2">09357132959</string>
+    <string name="Recourse3">09357132959</string>
+    <string name="Recourse4">09357132959</string>
+    <string name="Recourse5">09357132959</string>
+
+
+
+</resources>

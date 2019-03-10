@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_your_rating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.farshid.myproject_robofa.MainPage.Home.EnterActivity.Chortka.YourRating.YourRating">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/Coord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainPage.Home.EnterActivity.Chortka.YourRating.YourRating">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="25dp">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary2"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--#f8960a-->
+                    <TextView
+                        android:id="@+id/MainPage_Chortka_Note_TextNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="صفحه دانش آموز"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/MainPage_Chortka_Note_TextTerm"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="vl"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textSize="12sp" />-->
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/BackRecycler"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/StudentPage_CircularImageView"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/girl"
+                        app:civ_border_color="#172938"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_color="#192d3c"
+                        app:civ_shadow_radius="10" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--نام-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_TextName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="نام : "
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage__TetName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_TextName1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--نام خانوادگی-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_TetLastName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="نام خانوادگی : "
+                                android:textColor="@color/black"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_TetLastName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_TetLastName1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--پایه-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_Base1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="ترم: "
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_Base2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_Base1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--رشته-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_Feild1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="رشته: "
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_Feild2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_Feild1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--کلاس-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_Class1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="کلاس: "
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_Class2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_Class1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--رتبه ترم-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/StudentPage_TermRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="رتبه ترم: "
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/YourRating_TermRating2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/YourRating_TermRating"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--رتبه کل-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_TotalTermRating1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="رتبه کل ترم: "
+                                android:textColor="@color/black"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_TotalTermRating2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_TotalTermRating1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--کد ملی-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_NationalCode1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="کد ملی : "
+                                android:textColor="@color/black"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_NationalCode2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_NationalCode1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                        <!--شماره تلفن-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:id="@+id/StudentPage_PhoneNumber1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="شماره تماس :"
+                                android:textColor="@color/black"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/StudentPage_PhoneNumber2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/StudentPage_PhoneNumber1"
+                                android:text="---" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/BackRecycler"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/StudentPage_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="دقت کنید!!"
+                    android:textColor="#fff200"
+                    android:textSize="25dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/linnear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1"
+                    android:layout_margin="20dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="0 - 10"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="10 - 15"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="15 - 18"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="18 - 20"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linnear"
+                    android:layout_margin="20dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="نیاز به تمرین"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="10 - 15"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="15 - 18"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffee00"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="18 - 20"
+                        android:textColor="#00ff08"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#f4aa35"
+                    android:layoutDirection="rtl"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <!-- Row 1 Starts From Here -->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/texView5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="3"
+                            android:background="#f4aa35"
+                            android:gravity="center"
+                            android:padding="20dp"
+                            android:text="قابل توجه دانش آموزان"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+                    <!--سطر اول-->
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/Tex1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f42459"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="20 - 18"
+                            android:textColor="#000000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/Tex2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f32459"
+
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="18 - 15"
+                            android:textColor="#000000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/Tex3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f52459"
+                            android:gravity="center"
+                            android:padding="12dp"
+
+                            android:text="15 - 10"
+                            android:textColor="#000000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/Tex4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f42459"
+
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="10 - 0"
+                            android:textColor="#000000"
+                            android:textSize="10dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/Tex5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f32459"
+                            android:padding="12dp"
+                            android:text="خیلی خوب"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/Tex6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f32459"
+                            android:padding="12dp"
+                            android:text="خوب"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/Tex7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f32459"
+                            android:padding="12dp"
+                            android:text="قابل قبول"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/Tex8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:background="#f32459"
+                            android:padding="12dp"
+                            android:text="نیاز به تمرین"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp" />
+
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:background="#64fed9"
+                android:layoutDirection="rtl"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:visibility="gone">
+
+                <!-- Row 1 Starts From Here -->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="نمایش رتبه در هر هفته"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <!--سطر اول-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 1"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 2"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 3"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <!--رتبه اول-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+                <!--سطر دوم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 4"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 5"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 6"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+                <!--رتبه دوم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <!--سطر سوم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته7"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 8"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 9"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <!--رتبه سوم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek88"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <!--سطر چهارم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 10"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 11"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 12"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+                <!--رتبه چهارم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek1010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek1111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek1212"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+                <!--سطر پنجم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 13"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text=" هفته 14"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#64FFDA"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="هفته 15"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+                <!--رتبه پنجم-->
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextWeek1313"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek1414"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextWeek1515"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:background="#17e16100"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:text="---"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <!--&lt;!&ndash; Row 5 Starts From Here &ndash;&gt;-->
+                <!--<TableRow-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="رتبه کل"-->
+                <!--android:textSize="20dp"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_span="3"-->
+                <!--android:background="#2196F3"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textStyle="bold"-->
+                <!--android:gravity="center"/>-->
+
+                <!--</TableRow>-->
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#0569b9</color>-->
+    <!--<color name="colorPrimary2">#3f51b4</color>-->
+
+    <color name="colorPrimary">#FF8A80</color>
+    <color name="colorPrimary2">#B71C1C</color>
+    <color name="colorPrimaryDark">#C2185B</color>
+    <color name="colorAccent">#C2185B</color>
+    <color name="BackRecycler">#FF8A80</color>
+    <!--#FF8A80-->
+    <!--F8BBD0-->
+    <color name="TextColor">#C2185B</color>
+    <color name="TextColor2">#C2185B</color>
+
+    <!--#B71C1C-->
+    <!--C2185B-->
+    <!--<color name="colorPrimary">#ffffff</color>-->
+    <!--<color name="colorPrimary2">#2196f3</color>-->
+    <!--<color name="colorPrimaryDark">#2196f3</color>-->
+    <!--<color name="colorAccent">#2196f3</color>-->
+    <!--<color name="TextColor">#2196f3</color>-->
+    <!--<color name="TextColor2">#2196f3</color>-->
+    <!--<color name="BackRecycler">#dadbde</color>-->
+
+    <color name="colorAccent2">#3f51b4</color>
+    <color name="colorAccentforprofile">#fafafa</color>
+
+    <color name="ColorHeader">#1305b3</color>
+    <color name="BackColor">#3f51b4</color>
+    <color name="backgroundColor">#bf392b</color>
+    <color name="backgroundHaderColor">#100123</color>
+    <color name="transparent">#00000000</color>
+    <color name="Yellow">#c48909</color>
+
+    <color name="ColorMain">#c4898a</color>
+    <color name="White">#ffffff</color>
+    <color name="Backgrand_Edittext">#8b197a</color>
+    <color name="ColorTextToAddHome_buyandsell">#ffffff</color>
+    <color name="ColorTextfake">#006ccf</color>
+
+
+    <color name="Color_count_row">#4FC3F7</color>
+    <color name="Color_AnserMe">#4FC3F7</color>
+    <color name="Color_AnserRight">#4FC3F7</color>
+
+    <color name="RED">#ff0004</color>
+    <color name="Blue">#002aff</color>
+    <color name="Black">#fcfc00</color>
+    <color name="Green">#089301</color>
+
+    <color name="black">#000000</color>
+    <color name="gray">#000000</color>
+
+</resources>
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/Nav_MenuHome"
+            android:icon="@drawable/new_home"
+            android:title="خانه" />
+
+        <item
+            android:id="@+id/Nav_MenuRigster"
+            android:icon="@drawable/newperson"
+            android:title="ورود کارشناس" />
+
+        <item
+            android:id="@+id/Nav_MenEnterTeacher"
+            android:icon="@drawable/newperson"
+            android:title="ورود مربی " />
+    </group>
+    <item
+        android:id="@+id/Nav_MenuShare"
+        android:icon="@drawable/icon_share"
+        android:title="اشتراک گذاری" />
+    <item
+        android:id="@+id/Nav_MenuUpdate"
+        android:icon="@drawable/icon_update"
+        android:title="به روز رسانی برنامه" />
+    <item
+        android:id="@+id/Nav_MenuExit"
+        android:icon="@drawable/new_exit"
+        android:title="خارج شو" />
+
+
+</menu>

@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item
+        android:title="منو "
+        android:icon="@drawable/icon_menu"
+        android:iconTint="@color/White"
+        app:showAsAction="always"
+        >
+        <menu
+            >
+            <item
+                android:id="@+id/Nav_MenuRigster"
+                android:icon="@drawable/new_personfamale"
+                android:title="ورود کارشناس"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/Nav_MenEnterTeacher"
+                android:icon="@drawable/new_person2"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="ورود مربی " />
+            <!--<item-->
+                <!--android:id="@+id/Nav_MenuShare"-->
+                <!--android:icon="@drawable/icon_share2"-->
+                <!--android:title="اشتراک گذاری"-->
+                <!--app:showAsAction="never"-->
+                <!--android:orderInCategory="100"-->
+                <!--/>-->
+            <item
+                android:id="@+id/Nav_Menuaboutus"
+                android:icon="@drawable/about5"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="درباره ما" />
+            <item
+                android:id="@+id/Nav_MenuExit"
+                android:orderInCategory="100"
+                android:icon="@drawable/exit2"
+                app:showAsAction="never"
+                android:title="خروج" />
+        </menu>
+
+    </item>
+    <group />
+
+
+</menu>

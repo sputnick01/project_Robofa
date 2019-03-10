@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/BackRecycler"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_home"
+            android:text="چرتکه محاسبات ذهنی"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_home"
+            android:text="رباتیک"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_home"
+            android:text="ریاضی سه سوت"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_home"
+            android:text="اموزش زبان"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_home"
+            android:text="سازه های ماکارونی"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_home"
+            android:text="کلاس های دیگر"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:layoutDirection="ltr"
+                app:cardBackgroundColor="@color/colorAccentforprofile"
+                android:id="@+id/MainPage_TabHome_Chortka"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/tab_home_image1"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/for_chortka"
+                        android:src="@drawable/icon_chortka_m1"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="چرتکه"
+                        android:id="@+id/T1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/TextColor2"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:id="@+id/MainPage_TabHome_Robatic"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/colorAccentforprofile"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/for_chortka"
+                        android:src="@drawable/icon_robatic_m"
+                        android:id="@+id/tab_home_image2"
+
+                        />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="رباتیک"
+                        android:id="@+id/T2"
+                        android:layout_gravity="center"
+                        android:textColor="@color/TextColor2"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/MainPage_TabHome_EdocationLanguage"
+                app:cardBackgroundColor="@color/colorAccentforprofile"
+
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/tab_home_image3"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/for_chortka"
+                        android:src="@drawable/icon_language_m"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زبان"
+                        android:id="@+id/T4"
+                        android:layout_gravity="center"
+                        android:textColor="@color/TextColor2"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/colorAccentforprofile"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/MainPage_TabHome_Riaze"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:id="@+id/tab_home_image4"
+                        android:background="@drawable/for_chortka"
+                        android:src="@drawable/icon_riaze_m"
+                        />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ریاضی سه سوت"
+                        android:id="@+id/T3"
+                        android:layout_gravity="center"
+                        android:textColor="@color/TextColor2"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:layoutDirection="ltr"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/MainPage_TabHome_Saze"
+                app:cardPreventCornerOverlap="false"
+                app:cardBackgroundColor="@color/colorAccentforprofile"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:id="@+id/tab_home_image5"
+                        android:background="@drawable/for_chortka"
+                        android:src="@drawable/foreign_languages2"
+                        />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="سازه های ماکارونی"
+                        android:id="@+id/T6"
+                        android:layout_gravity="center"
+                        android:textColor="@color/TextColor2"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:layoutDirection="ltr"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:id="@+id/MainPage_TabHome_Class"
+                app:cardBackgroundColor="@color/colorAccentforprofile"
+
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:id="@+id/tab_home_image6"
+                        android:background="@drawable/for_chortka"
+                        android:src="@drawable/spa"
+                        />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="هوافضا"
+                        android:id="@+id/T5"
+                        android:layout_gravity="center"
+                        android:textColor="@color/TextColor2"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    <!--</android.support.design.widget.CoordinatorLayout>-->

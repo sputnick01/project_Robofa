@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/BackRecycler"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MainPage_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary2"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--#f8960a-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:id="@+id/MainPage_Home_IconToolbar"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:src="@drawable/icon_home"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--/>-->
+                    <TextView
+                        android:id="@+id/MainPage_Home_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="کارشناس"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Student"
+            android:background="@drawable/button_class"
+            android:text="دانش آموز"
+            android:textColor="@color/TextColor" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Teacher"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_class"
+            android:text="مربی"
+            android:textColor="@color/TextColor" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Channle"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_class"
+            android:text="کانال ها"
+            android:textColor="@color/TextColor" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RigsterStudentSchool"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_class"
+            android:text="ثبت نام دانش آموز مدرسه"
+            android:textColor="@color/TextColor" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RigsterTeacherSchool"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_class"
+            android:text="ثبت نام معلم مدرسه"
+            android:textColor="@color/TextColor" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rigster_ShowAllImage"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_class"
+            android:text="نمایش عکس ها"
+            android:textColor="@color/TextColor" />
+    </LinearLayout>
+</LinearLayout>

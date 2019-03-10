@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Noti_Class"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="رشته"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Noti_School_Base"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="پایه"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Noti_School_Lessen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="درس"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Noti_Term"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="ترم"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/Noti_TypeClass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="نوع کلاس"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/Noti_Note"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_setting2"
+            android:gravity="top"
+            android:hint="درج اطلاعیه"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16dp"
+
+            />
+
+        <Button
+            android:id="@+id/Noti_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/TextColor"
+            android:textSize="12dp"
+            android:background="@drawable/backedittext"
+            android:text="ثبت یادداشت"
+            />
+    </LinearLayout>
+</LinearLayout>

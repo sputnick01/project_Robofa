@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MainPage_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#22a6ef"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/MainPage_Home_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="ثبت نام مربی"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/RelativeLayout222"
+                android:background="#22a5ee">
+
+                <TextView
+                    android:id="@+id/Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="فرم ثبت نام" />
+            </RelativeLayout>
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/MainPage_Rigster_EditText_FeildTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backedittext"
+                android:text="رشته مربی گری "
+                android:textColor="@color/TextColor"
+                android:textColorHint="@color/Yellow"
+                android:textSize="12sp" />
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/MainPage_Rigster_EditText_LastDocument"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backedittext"
+                android:text=" مدرک تحصیلی"
+                android:visibility="gone"
+                android:textColor="@color/TextColor"
+                android:textColorHint="@color/Yellow"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/MainPage_RigsterTeacher_EditText_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_setting2"
+                android:hint="نام "
+                android:visibility="gone"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16dp"
+
+                />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/MainPage_RigsterTeacher_EditText_LastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back_setting2"
+                android:hint="نام خانوادگی "
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/MainPage_RigsterTeacher_EditText_Term"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back_setting2"
+                android:hint=" ترم"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16dp" />
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/MainPage_RigsterTeacher_EditText_KindClass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/backedittext"
+                android:text="نوع کلاس "
+                android:textColor="@color/TextColor"
+                android:textColorHint="@color/Yellow"
+                android:textSize="12sp" />
+
+            <EditText
+                android:visibility="gone"
+
+                android:id="@+id/MainPage_RigsterTeacher_EditText_MaliKey"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back_setting2"
+                android:hint="کد ملی"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/MainPage_RigsterTeacher_EditText_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back_setting2"
+                android:hint="شماره تلفن"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16dp" />
+
+
+            <!--دکمه ورود-->
+            <Button
+                android:id="@+id/MainPage_RigsterTeacher_ButtonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/TextColor"
+                android:textSize="12dp"
+                android:text="ثبت نام"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

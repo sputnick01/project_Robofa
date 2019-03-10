@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MainPage_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary2"
+                android:elevation="20dp"
+                android:minHeight="?attr/actionBarSize">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--#f8960a-->
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/foreign_languages2" />
+
+                    <TextView
+                        android:id="@+id/MainPage_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="کلاس های زبان"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term1"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="80dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:id="@+id/TetermZ1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم1"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term2"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم 2"
+                            android:id="@+id/TetermZ2"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term3"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="80dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:id="@+id/TetermZ3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم3"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term4"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:id="@+id/TetermZ4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم4"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term5"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="80dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/imagetermZ5"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم5 "
+                            android:id="@+id/TetermZ5"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term6"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/imagetermZ6"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم6"
+                            android:id="@+id/TetermZ6"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term7"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="80dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم7"
+                            android:id="@+id/TetermZ7"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term8"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم8"
+                            android:id="@+id/Tetermz8"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term9"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="80dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ9"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم9"
+                            android:id="@+id/TetermZ9"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term10"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ10"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم10"
+                            android:id="@+id/TetermZ10"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term11"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="80dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ11"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم9"
+                            android:id="@+id/TetermZ11"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MainPage_Home_Zaban_Term12"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagetermZ12"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/for_chortka"
+                            android:scaleType="centerInside"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="ترم10"
+                            android:id="@+id/TetermZ12"
+                            android:textColor="@color/colorPrimary2"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--android:background="@drawable/image_language4"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true">-->
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fitsSystemWindows="true">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/MainPage_toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#0ecbe0"-->
+                <!--android:elevation="20dp"-->
+                <!--android:minHeight="?attr/actionBarSize">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--&lt;!&ndash;#f8960a&ndash;&gt;-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:adjustViewBounds="true"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:src="@drawable/foreign_languages2"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/MainPage_toolbar_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="کلاس های زبان"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="14sp" />-->
+
+                <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:background="@drawable/button_class2"-->
+                <!--android:text="ترم های 1 تا 6"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp" />-->
+
+            <!---->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم 2"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم 3"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم 4"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم 5"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم 6"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term06"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:background="@drawable/button_class2"-->
+                <!--android:text="ترم های 7 تا 12"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term7"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم7"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term8"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم8"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term9"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم9"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term10"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم10 "-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term11"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم11"-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+                <!--android:enabled="false"-->
+                <!--android:id="@+id/MainPage_Home_Zaban_Term12"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/button_class"-->
+                <!--android:text="ترم12 "-->
+                <!--android:textColor="@color/TextColor"-->
+                <!--android:textSize="15dp"-->
+                <!--android:visibility="gone" />-->
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+<!--</LinearLayout>-->
+

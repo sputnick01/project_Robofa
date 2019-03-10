@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert_channle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farshid.myproject_robofa.MainPage.Channel.InsertChannle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/KindChannle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backedittext"
+            android:text="نوع کانال"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/Yellow"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/NoteChannle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_setting2"
+            android:hint="یادداشت شما"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16dp"
+
+            />
+        <!--دکمه ورود-->
+        <Button
+            android:id="@+id/InsertNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:text="ثبت یادداشت!!"
+            android:textColor="@color/TextColor"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>
